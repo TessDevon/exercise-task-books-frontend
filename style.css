@@ -1,0 +1,61 @@
+header {
+    background-color: rgb(138, 102, 56);
+    color: beige;
+}
+
+h1 {
+    padding:20px;
+    margin:0px;
+}
+
+.books_h2 {
+    padding:20px;
+    margin:0px;
+}
+
+.books {
+    background-color: rgb(199, 166, 122);
+}
+
+.libaryLoan {
+    background-color: rgb(212, 186, 151);
+}
+
+.libraryLoan {
+    background-color: rgb(248, 221, 183);
+    padding: 20px;
+}
+
+.addBook {
+    background-color: rgb(248, 221, 183);
+    margin: 20px;
+}
+
+.oneBook{
+    background-color: rgb(248, 221, 183);
+    padding: 20px;
+    font-size: larger;
+}
+
+body{
+    background-color: rgb(100, 66, 22);
+}
+
+.book_container{
+    padding: 20px;
+    margin-bottom: 10px;
+    padding-top: 0px;
+}
+
+div {
+    margin-bottom: 50px;
+}
+
+a{
+    font-size: large;
+    color:beige
+}
+
+button{
+    margin-left: 15px;
+}

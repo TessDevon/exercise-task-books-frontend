@@ -1,14 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Södrans bibliotek</title>
 
-    <script src="script.js" defer></script>
+    <link href="style.css" rel="stylesheet"/>
+    <script src="script.js" defer type="module"></script>
 </head>
 <body>
-    
+
+    <header>
+        <h1>Södrans bibliotek</h1>
+    </header>
+    <br>
+    <main>
+        <section id="books" class="books">
+            <h2 class="books_h2">Våra böcker:</h2>              
+            <article id="book_container" class="book_container"><article>
+        </section><br>
+        <section id="libraryLoan" class="libraryLoan">
+            <h2 id="userLoan" class="userLoan">Mina lån</h2>
+            <div id="loanBooks"></div>
+        </section>
+        <br>
+        <a href="addBook.html">Lägg till en bok</a>
+        <div>
+            <img/>
+        </div>
+    </main>
 </body>
 </html>
