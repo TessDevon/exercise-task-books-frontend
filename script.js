@@ -1,6 +1,8 @@
+let URLback = "https://whale-app-p9lg3.ondigitalocean.app/"
+let URLbackLokal = "http://localhost:3000/books"
 
 function booksToPrint () {
-    fetch("http://localhost:3000/books")
+    fetch(URLback)
     .then(res => res.json())
     .then(data => {
         printBooks(data);
@@ -125,7 +127,7 @@ function loanBooks (event) {
     const libraryLoan = document.getElementById("libraryLoan");
     console.log(bookId);
 
-    fetch("http://localhost:3000/books/" + bookId, {
+    fetch(URLback + bookId, {
     method: "PATCH",
     headers: {
         "Content-Type": "application/json",
@@ -156,7 +158,7 @@ function showBook (event) {
     const bookId = event.target.id;
     console.log(bookId);
 
-    fetch("http://localhost:3000/books/" + bookId, {
+    fetch(URLback + bookId, {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
@@ -286,7 +288,7 @@ function whriteUpForm () {
     const book = {title:new_title.value, author:new_author.value, numberOfPages:new_numberOfPages.value, lendingStatus:false}
     console.log(book);
 
-    fetch("http://localhost:3000/books", {
+    fetch(URLback, {
     method: "POST",
     headers: {
         "Content-Type": "application/json",
