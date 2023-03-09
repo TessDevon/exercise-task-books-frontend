@@ -8,13 +8,15 @@ h1 {
     margin:0px;
 }
 
-.books_h2 {
-    padding:20px;
-    margin:0px;
-}
+/*
+.books_h2 h2{
+    padding-bottom:15px;
+    margin:20px;
+}*/
 
 .books {
     background-color: rgb(199, 166, 122);
+    padding: 20px;
 }
 
 .libaryLoan {
@@ -31,6 +33,12 @@ h1 {
     margin: 20px;
 }
 
+.newBook {
+    background-color: rgb(248, 221, 183);
+    margin: 20px;
+    padding-left: 20px;
+}
+
 .oneBook{
     background-color: rgb(248, 221, 183);
     padding: 20px;
@@ -42,8 +50,10 @@ body{
 }
 
 .book_container{
+    background-color: rgb(248, 221, 183);
     padding: 20px;
     margin-bottom: 10px;
+    margin-left: 20px;
     padding-top: 0px;
 }
 
@@ -58,4 +68,9 @@ a{
 
 button{
     margin-left: 15px;
+}
+
+.new_bookInput {
+    display: block;
+    margin-bottom: 15px;
 }
