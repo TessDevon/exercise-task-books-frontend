@@ -1,14 +1,3 @@
-/*let new_bookBtn = document.getElementById("new_bookBtn");
-
-let new_title = document.getElementById("new_title");
-let new_author = document.getElementById("new_author");
-let new_numberOfPages = document.getElementById("new_numberOfPages");
-let new_lendingStatus = document.getElementById("new_lendingStatus");
-
-let bookList = document.getElementById("bookList");
-let loanBookscontainer = document.getElementById("loanBooks");
-let book_container = document.getElementById("book_container");
-let oneBook = document.getElementById("oneBook");*/
 
 function booksToPrint () {
     fetch("http://localhost:3000/books")
@@ -99,18 +88,18 @@ function printBooks(books) {
         
     });
     const libraryLoan = document.createElement("section");
-    libraryLoan.classList.add("libraryLoan");
+    libraryLoan.className = "libraryLoan";
     libraryLoan.id = "libraryLoan";
     root.appendChild(libraryLoan);    
     
     const userLoan = document.createElement("h2");
     userLoan.innerHTML = "Mina lån";
-    userLoan.classList.add("userLoan");
+    userLoan.className = "userLoan";
     userLoan.id = "userLoan";
     libraryLoan.appendChild(userLoan);
 
     const loanBookss = document.createElement("div");
-    loanBookss.classList.add("loanBooks");
+    loanBookss.className = "loanBooks";
     loanBookss.id = "loanBooks";
     libraryLoan.appendChild(loanBookss);
 
@@ -124,8 +113,6 @@ function printBooks(books) {
         root.innerHTML="";
         buildNewBookPart();
     });
-/*
-    <a href="addBook.html">Lägg till en bok</a> */
 };
 
 
